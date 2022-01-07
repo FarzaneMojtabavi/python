@@ -1,5 +1,3 @@
-# در برنامه ماشین حساب که در کلاس نوشته شد ،  قابلیت های زیر را بیفزایید(با تبدیل رادیان به درجه برای توابع مثلثاتی)
-# Radical sin cot cos tan factorial
 import math
 import colorama
 from colorama import Fore, Back, Style
