@@ -1,8 +1,8 @@
 import math
 import colorama
 from colorama import Fore, Back, Style
-num1 = float(input(Fore.WHITE + "Enter number one: "))
-num2 = float(input(Fore.WHITE + "Enter number two: "))
+num1 = float(input(Fore.BLUE + "Enter number one: "))
+num2 = float(input(Fore.BLUE + "Enter number two: "))
 operation = input(Fore.RED +"Enter character (+ - * /) or write other: ")
 if operation == "+":   result = num1+num2
 elif operation == "-": result = num1-num2
@@ -18,12 +18,12 @@ if operation == 'other':
         if num3 == 'one':
             if num1 == 0 and num1 == 1:
                 print(
-                    Fore.WHITE + 'The square root of the numbers is zero and one is the number itself')
+                    Fore.WHITE + 'The second root of the numbers zero and one is the number itself')
             else: result = math.sqrt(math.degrees(num1))
         elif num3 == 'two':
             if num1 == 0 and num1 == 1:
                 print(
-                    Fore.WHITE + 'The square root of the numbers is zero and one is the number itself')
+                    Fore.WHITE + 'The second root of the numbers zero and one is the number itself')
             else:result = math.sqrt(math.degrees(num2))
     elif operation == "sin":
         if num3 == 'one': result = math.sin(math.degrees(num1))
