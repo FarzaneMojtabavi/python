@@ -5,8 +5,7 @@ import random
 player = 'player 1 =O'
 start_time = time.time()
 game = [['_', '_', '_'], ['_', '_', '_'], ['_', '_', '_']]
-# Show game houses and set colors
-def show_game_board():
+def show_game_board(): # Show game houses and set colors
     for i in range(3):
         for j in range(3):
             if game[i][j] == '_':
@@ -16,8 +15,7 @@ def show_game_board():
             else:
                 print(Fore.RED, game[i][j], end=' ')
         print()
-# Win message and exit the game
-def winning_message_player_1():
+def winning_message_player_1(): # Win message and exit the game
     textwins = 'player 1 wins'
     print(Fore.BLUE, textwins)
     exit()
@@ -25,8 +23,7 @@ def winning_message_player_2():
     textwins = 'player 2 wins'
     print(Fore.RED, textwins)
     exit()
-# Check the winner or draw of the game
-def check_winner():
+def check_winner(): # Check the winner or draw of the game
     for i in range(3):
         if game[0][i] == 'X' and game[1][i] == 'X' and game[2][i] == 'X':
             winning_message_player_2()
@@ -54,13 +51,10 @@ def game_operation():
     check_turn_of_the_game()
     show_game_board()
     check_winner()
-    print(Fore.GREEN, "--- %s seconds ---" % (round(time.time() - start_time)))
-# Show game houses and set colors
-show_game_board()
-# Request a solo game with a computer or doubles
-check_single_or_two_player = int(input('Do you play single or double?'))
-# Check the turn of the game
-def check_turn_of_the_game():
+    print(Fore.GREEN, "--- %s seconds ---" % (round(time.time() - start_time)))  
+show_game_board() # Show game houses and set colors
+check_single_or_two_player = int(input('Do you play single or double?')) # Request a solo game with a computer or doubles
+def check_turn_of_the_game(): # Check the turn of the game
     while True:
         print(Fore.BLACK, player)
         if check_single_or_two_player == 2:
@@ -78,22 +72,26 @@ def check_turn_of_the_game():
                 if player == 'player 1 =O':
                     z = 'O'
                 elif player == 'player 2 =X':
+                    if check_single_or_two_player == 1: #To prevent the selection of a filled field for the computer player
+                        if game[row][col] == 'X' or game[row][col] == 'O':
+                            row = random.randint(0, 2)
+                            col = random.randint(0, 2)
                     z = 'X'
                 game[row][col] = z
                 break
             else:
                 print(Fore.RED, 'You can not. full')
         else:
-            print(Fore.RED, 'Just enter between zero and two')
+            print(Fore.RED, 'Just enter between zero and two')               
 if check_single_or_two_player == 2:
     while True:
         player = 'player 1 =O'
         game_operation()
         player = 'player 2 =X'
-        game_operation()
+        game_operation() 
 elif check_single_or_two_player == 1:
     while True:
         player = 'player 1 =O'
         game_operation()
         player = 'player 2 =X'
-        game_operation()
+        game_operation() 
