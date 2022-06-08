@@ -1,0 +1,6 @@
+apple,sib
+tree,derakht
+i,man
+black,meshki
+red,ghermez
+green,sabz
