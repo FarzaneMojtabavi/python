@@ -1,0 +1,7 @@
+1,Film,The Nice Guys,Shane Black,7.4,https://www.imdb.com/title/tt3799694,action,2016
+2,Film,Midsommar,Ari Aster,7.1,https://www.imdb.com/title/tt8772262,drama,2019
+3,Film,Ambulance,Michael Bay,6.5,https://www.imdb.com/title/tt4998632,action,2022
+4,Series,Nope,Jordan Peele,7.0,https://www.imdb.com/title/tt10954984/?ref_=adv_li_tt,horror,2022
+5,Series,The Lord of the Rings,6.8,imdb.com/title/tt7631058/?ref_=adv_li_tt,action,2022
+6,Clip,Mr Bean,https://www.aparat.com/v/FzyOd,comedy
+
