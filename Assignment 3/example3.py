@@ -1,3 +1,25 @@
+# hangman game
+# import random
+# words = ['book', 'tree', 'python', 'bag', 'umbrella', 'dog', 'clock','engineer', 'toothpaste', 'shirmoz']
+# word = random.choice(words) # clock
+# joon = 3
+# w=[]
+# len_word = len(word)
+# while joon > 0:
+#     print('- ' * len(word)) # - - - - -
+#     user_character = input() # s
+#     if user_character in word:
+#         print('yes')
+#         len_word = len_word-1
+#         w.append(user_character)
+#         print("".join(w))
+#         if len_word == 0:
+#             print('bravo')
+#             break
+#     else:
+#         joon = joon - 1
+#         print(joon+1)
+#         print('no')     
 # *******************************************************************
 # araye ba tol n va adad tasadofi gheyre tekrari
 # listnumber=[]
