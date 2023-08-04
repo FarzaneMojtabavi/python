@@ -2,7 +2,8 @@ from colorama import Fore
 while True:
     numberStudentsClass = int(input(Fore.GREEN+'number Students Class: '))
     scoreProgrammingLesson = float(input('score Programming Lesson: '))
-    sum = 0
+    # sum = 0
+    sum=scoreProgrammingLesson
     minimum = scoreProgrammingLesson
     maximum = scoreProgrammingLesson
     for i in range(numberStudentsClass-1):
