@@ -10,3 +10,10 @@ while True:
         break
     if exit=='n':
         fibo=[1,1]
+
+#or
+a=int(input())
+fibo=[1,1]
+for i in range(a):
+    fibo.append(fibo[i]+fibo[i+1])
+print(fibo)
