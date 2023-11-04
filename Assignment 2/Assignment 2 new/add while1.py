@@ -6,3 +6,10 @@ while True:
     if number==0:
         print(sums)
         break
+# or
+a=int(input())
+count=0
+while a!=0:
+    count=count+a
+    a=int(input())
+print(count)
