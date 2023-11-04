@@ -10,3 +10,10 @@ while True:
         exit=input('exit?y or n: ')
         if exit=='y':
             break
+
+#or
+tas=int(input())
+while tas==6:
+  tas=int(input())  
+  if tas>6 or tas<0:
+    print('error')
