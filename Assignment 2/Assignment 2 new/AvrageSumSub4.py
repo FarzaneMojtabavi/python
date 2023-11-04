@@ -19,3 +19,20 @@ while True:
     exit=input('exit?y or n: ')
     if exit=='y':
         break
+
+#or
+n=int(input())
+b=int(input())
+max=b
+min=b
+sum=0
+for i in range(n-1):
+    b=int(input())
+    if b>max:
+        max=b
+    if b<min:
+        min=b
+    sum=sum+b
+print(sum)
+avg=sum/n
+print(avg)
