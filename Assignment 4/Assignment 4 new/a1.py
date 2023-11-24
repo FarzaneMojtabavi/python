@@ -16,3 +16,21 @@ for i in range(n):
                 print('*',end='')   
         print()       
 
+#or
+def s(a):
+    print(a,end='')
+n=int(input())
+m=int(input())
+for i in range(n):
+    for j in range(m):
+        if j%2==0:
+            if i%2==0:
+                s('*')
+            else: 
+                s('#')
+        else:
+            if i%2==0:
+                s('#')
+            else: 
+                s('*')
+    print()
