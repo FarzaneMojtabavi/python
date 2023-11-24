@@ -5,3 +5,11 @@ def z(v,t):
             print(b,end=' ')
         print()
 z(5,6)
+
+or:
+def zrb(n,m):
+    for i in range(n):
+        for j in range(m):
+            print((i+1)*(j+1),end=' ')
+        print()
+zrb(int(input()),int(input()))
