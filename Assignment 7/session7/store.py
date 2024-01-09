@@ -11,9 +11,23 @@ def reed_from_database():
 def write_to_database():
     with open('database.txt', 'a') as f:
         last_product = PRODUCTS[-1] 
-        line = f"{last_product['code']},{last_product['name']},{last_product['price']},{last_product['count']}\n"
+        line = f"{last_product['code']},
+        {last_product['name']},
+        {last_product['price']},
+        {last_product['count']}\n"
+        f.write(',')
         f.write(line)
-
+def write_cimi(text,myfile):
+    myfile.write(input(text))
+    myfile.write(',')
+def add_product():
+    myfile=open('database.txt','a')
+    myfile.write('\n')
+    write_cimi('id: ',myfile)
+    write_cimi('name: ',myfile)
+    write_cimi('price: ',myfile)
+    write_cimi('count: ',myfile)
+    print('Successfully added to database.')
 def show_menu():
     print('1- Add')
     print('2- Edit')
